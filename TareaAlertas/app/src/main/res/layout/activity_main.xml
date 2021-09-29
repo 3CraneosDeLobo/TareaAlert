@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <CheckBox
+            android:id="@+id/cB1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Musica" />
+
+        <CheckBox
+            android:id="@+id/cB2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carro" />
+
+        <CheckBox
+            android:id="@+id/cB3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calle" />
+
+        <CheckBox
+            android:id="@+id/cB4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Persona" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ver Imagen" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ver Info" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Editar Info" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Swipe Right or Left to Exit"
+            android:textAlignment="center"
+            android:textColor="#050505"
+            android:textSize="48sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
